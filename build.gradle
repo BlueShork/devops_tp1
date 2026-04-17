@@ -38,3 +38,12 @@ jacocoTestReport {
         html.required = true
     }
 }
+
+sonar {
+    properties {
+        property "sonar.projectKey", "BlueShork_devops_tp1"
+        property "sonar.organization", "blueshork"
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
+    }
+}
